@@ -1,0 +1,7 @@
+- f.inputs do
+  = f.input :member_id, :as => :select, :label => t('label.member'), :collection => @active_members
+  = f.input :event_date, :as => :string, :label => t('label.event-date'), :input_html => { :class => 'datepicker' }
+- f.buttons do
+  = f.commit_button(t('label.save'))
+  - if display_cancel
+    = f.commit_button(t("label.cancel"), :value => t("label.cancel"))

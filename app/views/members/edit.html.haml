@@ -1,0 +1,11 @@
+= page_title(t(".title"))
+- semantic_form_for(@member) do |f|
+  = render(:partial => "form", :locals => {:display_cancel => true, :f => f})
+- if @other_members.any?
+  - semantic_form_for(@member, :url => merge_member_path) do |f|
+    %h2
+      Merge with
+    - f.inputs do
+      = f.input :other_id, :as => :select, :label => t("label.member"), :collection => @other_members
+    - f.buttons do
+      = f.commit_button(t("label.merge"))

@@ -1,0 +1,13 @@
+%tr{:member => "#{raid_attending_member.id}"}
+  %td
+    = link_to(raid_attending_member.name, member_url(raid_attending_member), :class => "#{raid_attending_member.css_class}")
+  %td.rank
+    = raid_attending_member.rank
+  %td
+    = raid_attending_member.total_percent
+  %td
+    = raid_attending_member.recent_percent
+  %td
+    = raid_attending_member.tuesday_percent
+  %td
+    = raid_attending_member.thursday_percent

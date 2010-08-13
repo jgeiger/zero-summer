@@ -1,0 +1,12 @@
+= render(:partial => "shared/pagination.html.haml", :locals => {:items => dungeons})
+%br
+%table#loot-table{:width => "100%"}
+  %thead
+    %tr.rowHeader
+      %th
+        Name
+      - admin_only do
+        %th{:width => "10%"}
+          Action
+  %tbody
+    = render(:partial => 'dungeons/dungeon.html.haml', :collection => dungeons)

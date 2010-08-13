@@ -1,0 +1,4 @@
+= page_title(@encounter.name)
+%h2
+  Loots
+= render(:partial => "loots/loots", :locals => {:loots => @encounter.loots})

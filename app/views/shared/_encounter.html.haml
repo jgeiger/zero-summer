@@ -1,0 +1,9 @@
+%tr
+  %td
+    = dungeon_link(encounter)
+  %td
+    = boss_link(encounter.boss)
+  - admin_only do
+    %td
+      = link_to(t("label.edit"), edit_encounter_url(encounter))
+      = link_to(t("label.delete"), encounter_url(encounter), :confirm => 'Are you sure?', :method => :delete)

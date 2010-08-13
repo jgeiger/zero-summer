@@ -1,0 +1,15 @@
+%table#loot-table{:width => "100%"}
+  %thead
+    %tr.rowHeader
+      %th
+        Status
+      %th
+        Item
+      %th
+        Raid
+      %th
+        Looted
+      %th
+        Boss
+  %tbody
+    = render(:partial => 'loots/loot.html.haml', :collection => loots)

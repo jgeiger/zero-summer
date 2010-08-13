@@ -1,0 +1,14 @@
+%h1{:class => @member.css_class}= @member.name
+%p
+  Rank: #{@member.rank}
+  %br
+  Role: #{@member.role}
+%h2
+  Loots
+= render(:partial => "members/loots", :locals => {:loots => @member.loots})
+%h2
+  Raids
+= render(:partial => "members/raids", :locals => {:raids => @member.raids})
+//%h2
+//  Adjustments
+//= render(:partial => "shared/adjustments", :locals => {:adjustments => @member.adjustments})

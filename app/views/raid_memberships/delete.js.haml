@@ -1,0 +1,6 @@
+== $("#available-raiders").html("#{escape_javascript(render(:partial => 'raids/available_raiders.html.haml', :locals => {:raid => @raid, :available_raiders => @available_raiders}))}")
+== $("#raid-members").html("#{escape_javascript(render(:partial => 'raids/raiders.html.haml', :locals => {:raiders => @raiders}))}")
+== $('#loot_member_id').find('option').remove();
+== $('#loot_member_id').append("#{escape_javascript(@loot_members_options)}")
+== $(".active-memberships").text("#{@active_memberships}")
+== $(".total-memberships").text("#{@total_memberships}")

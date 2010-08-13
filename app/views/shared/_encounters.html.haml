@@ -1,0 +1,12 @@
+%table#encounter-table{:width => "100%"}
+  %thead
+    %tr
+      %th
+        Dungeon
+      %th
+        Boss
+      - admin_only do
+        %th{:width => "10%"}
+          Action
+  %tbody
+    = render(:partial => "shared/encounter", :collection => encounters)

@@ -1,0 +1,5 @@
+= page_title(@drop.fullname)
+%br
+%h2
+  Loots
+= render(:partial => "loots/loots", :locals => {:loots => @drop.loots})

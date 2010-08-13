@@ -1,0 +1,13 @@
+%tr{:member => "#{member.id}"}
+  %td
+    = link_to(member.name, member_url(member), :class => "#{member.css_class}")
+  %td
+    = member.klass
+  %td.rank
+    = member.rank
+  %td.role
+    = member.role
+  - if admin?
+    %td
+      = link_to(t("label.edit"), edit_member_url(member))
+      = (link_to(t("label.delete"), member_url(member), :confirm => 'Are you sure?', :method => :delete)) if member.deleteable?

@@ -1,0 +1,13 @@
+%tr{:class => 'loot-row', :loot_id => "#{loot.id}"}
+  %td
+    = loot.status
+  %td
+    = link_to(loot.member.name, member_url(loot.member), :class => loot.member.css_class )
+  %td
+    = item_link(loot.drop.item)
+  %td
+    = loot.drop.encounter.boss.name
+  - admin_only do
+    %td
+      = link_to(t("label.edit"), edit_loot_url(loot))
+      = link_to(t("label.delete"), loot_url(loot), :class => "delete-link")

@@ -1,0 +1,5 @@
+= page_title(t(".title"))
+= link_to(t(".new"), new_boss_url) if admin?
+%br
+%br
+= render(:partial => "shared/bosses", :locals => {:bosses => @bosses})

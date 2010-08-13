@@ -1,0 +1,8 @@
+%tr
+  %td
+    = boss_link(boss)
+  - admin_only do
+    %td
+      = link_to(t("label.edit"), edit_boss_url(boss))
+      = link_to(t("label.delete"), boss_url(boss), :confirm => 'Are you sure?', :method => :delete)
+      

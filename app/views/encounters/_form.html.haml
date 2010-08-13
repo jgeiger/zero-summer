@@ -1,0 +1,8 @@
+- f.inputs do
+  = f.input :dungeon_id, :as => :select, :label => t("label.dungeon"), :collection => @dungeons, :selected => @encounter.dungeon_id.to_s
+  = f.input :boss_id, :as => :select, :label => t("label.boss"), :collection => @bosses, :selected => @encounter.boss_id.to_s
+  = f.input :difficulty, :as => :select, :label => t("label.difficulty"), :collection => Encounter::DIFFICULTIES.sort, :selected => @encounter.difficulty
+- f.buttons do
+  = f.commit_button(t("label.save"))
+  - if display_cancel
+    = f.commit_button(t("label.cancel"), :value => t("label.cancel"))

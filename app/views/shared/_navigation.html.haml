@@ -1,0 +1,14 @@
+#navigation
+  = link_to("Home", root_url)
+  = link_to("Absences", absences_url)
+  = link_to("Raid Attendance", raid_attending_members_url)
+  = link_to("Members", members_url)
+  = link_to("Raids", raids_url)
+  = link_to("Loots", loots_url)
+  = link_to("Items", items_url)
+  - admin_only do
+    = link_to("Dungeons", dungeons_url)
+    = link_to("Encounters", encounters_url)
+    = link_to("Bosses", bosses_url)
+    = link_to("Drops", drops_url)
+

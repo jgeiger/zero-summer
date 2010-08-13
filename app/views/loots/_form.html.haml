@@ -1,0 +1,12 @@
+- f.inputs do
+  = f.input :status, :as => :select, :label => t("label.type"), :collection => Loot::STATUSES
+  = f.input :member_id, :as => :select, :label => t("label.member"), :collection => @raid_members
+  = f.input :dungeon_id, :as => :select, :label => t("label.dungeon"), :collection => @dungeons, :selected => @loot.drop.encounter.dungeon_id.to_s
+  = f.input :difficulty, :as => :select, :label => t("label.difficulty"), :collection => @difficulties, :selected => @loot.drop.encounter.difficulty
+  = f.input :boss_id, :as => :select, :label => t("label.boss"), :collection => @bosses, :selected => @loot.drop.encounter.boss_id.to_s
+  = f.input :drop_id, :as => :select, :label => t("label.drop"), :collection => @drops
+  = f.input :raid_id, :as => :hidden, :value => @raid.id
+- f.buttons do
+  = f.commit_button(t("label.save"))
+  - if display_cancel
+    = f.commit_button(t("label.cancel"), :value => t("label.cancel"))

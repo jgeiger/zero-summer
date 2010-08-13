@@ -1,0 +1,18 @@
+= render(:partial => "shared/pagination.html.haml", :locals => {:items => absences})
+%br
+%table#absence-table{:width => "100%"}
+  %thead
+    %tr.rowHeader
+      %th
+        = sort_links(Absence, "members.name")
+        Name
+      %th
+        Role
+      %th
+        = sort_links(Absence, "event_date")
+        Absent on
+      - admin_only do
+        %th{:width => "10%"}
+          Action
+  %tbody
+    = render(:partial => 'absences/absence.html.haml', :collection => absences)

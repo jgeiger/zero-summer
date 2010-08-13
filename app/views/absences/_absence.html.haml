@@ -1,0 +1,11 @@
+%tr
+  %td
+    = link_to(absence.member.name, member_url(absence.member), :class => "#{absence.member.css_class}")
+  %td
+    = absence.member.role
+  %td
+    = absence.event_date.to_s(:us)
+  - admin_only do
+    %td
+      = link_to(t("label.edit"), edit_absence_url(absence))
+      = link_to(t("label.delete"), absence_url(absence), :class => 'delete-link')

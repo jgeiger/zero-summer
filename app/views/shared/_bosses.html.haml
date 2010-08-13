@@ -1,0 +1,10 @@
+%table#boss-table{:width => "100%"}
+  %thead
+    %tr
+      %th
+        Name
+      - admin_only do
+        %th{:width => "10%"}
+          Action
+  %tbody
+    = render(:partial => "shared/boss", :collection => bosses)

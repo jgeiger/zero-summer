@@ -1,0 +1,22 @@
+= page_title(t(".title"))
+= link_to(t(".new"), new_member_url) if admin?
+%br
+%br
+%p
+  == Sum: #{@adjustment_sum}
+#members
+  %form{:name => "sform", :action => "", :style => "display:inline"}
+  %table.filter-menu
+    %tr
+      %td{:align => 'right'}
+        %label
+          Filter on name:
+      %td
+        = text_field_tag(:query, @query, :autocomplete => 'off')
+        = hidden_field_tag(:sort_column, @sort_column)
+        = hidden_field_tag(:sort_direction, @sort_direction)
+        = hidden_field_tag(:page, @page)
+#dataTable
+  = render(:partial => "members.html.haml", :locals => {:members => @members})
+- if admin?
+  %script{:language=>"javascript",:src=>"/javascripts/editing.js"}=""

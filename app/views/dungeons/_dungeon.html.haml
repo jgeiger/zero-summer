@@ -1,0 +1,7 @@
+%tr
+  %td
+    = link_to(dungeon.name, dungeon_url(dungeon))
+  - admin_only do
+    %td
+      = link_to(t("label.edit"), edit_dungeon_url(dungeon))
+      = link_to(t("label.delete"), dungeon_url(dungeon), :confirm => 'Are you sure?', :method => :delete)

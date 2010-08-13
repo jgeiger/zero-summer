@@ -1,0 +1,15 @@
+.role-box
+  %strong
+    Tanks (#{raiders['tank'].size})
+  %ul{:class => 'raid-memberships'}
+    = render(:partial => 'raids/raid_membership.html.haml', :collection => raiders['tank'].sort { |x,y| x.member.name <=> y.member.name })
+.role-box
+  %strong
+    Healers (#{raiders['healer'].size})
+  %ul{:class => 'raid-memberships'}
+    = render(:partial => 'raids/raid_membership.html.haml', :collection => raiders['healer'].sort { |x,y| x.member.name <=> y.member.name })
+.role-box
+  %strong
+    DPS (#{raiders['dps'].size})
+  %ul{:class => 'raid-memberships'}
+    = render(:partial => 'raids/raid_membership.html.haml', :collection => raiders['dps'].sort { |x,y| x.member.name <=> y.member.name })

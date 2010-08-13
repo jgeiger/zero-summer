@@ -1,0 +1,28 @@
+%strong
+  == #{"From "+@since.to_i.weeks.ago.to_date.to_s(:us)+" - "+Date.today.to_s(:us)+ " ("+pluralize(@members.first.raid_count, 'Raids')+")"}
+  %br
+  == Members: #{@members.size}
+%br
+%br
+%table#member-table{:width => "100%"}
+  %thead
+    %tr.rowHeader
+      %th
+        Name
+        = sort_links(Member, "members.name", "raid_attending")
+      %th
+        Rank
+      %th{:width => "15%"}
+        Total
+        = sort_links(Member, "total_percent", "raid_attending")
+      %th{:width => "15%"}
+        Recent
+        = sort_links(Member, "recent_percent", "raid_attending")
+      %th{:width => "15%"}
+        Tuesday
+        = sort_links(Member, "tuesday_percent", "raid_attending")
+      %th{:width => "15%"}
+        Thursday
+        = sort_links(Member, "thursday_percent", "raid_attending")
+  %tbody
+    = render(:partial => "members/raid_attending_member.html.haml", :collection => members)

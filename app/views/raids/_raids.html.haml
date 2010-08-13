@@ -1,0 +1,14 @@
+= render(:partial => "shared/pagination.html.haml", :locals => {:items => raids})
+%br
+%table#raid-table{:width => "100%"}
+  %thead
+    %tr.rowHeader
+      %th
+        Name
+      %th
+        Event Date
+      - admin_only do
+        %th{:width => "10%"}
+          Action
+  %tbody
+    = render(:partial => 'raids/raid.html.haml', :collection => raids)

@@ -1,0 +1,15 @@
+%table#adjustment-table{:width => "100%"}
+  %thead
+    %tr
+      %th
+        From Raid
+      %th
+        On Date
+      %th
+        From Item
+      %th
+        From Member
+      %th
+        Amount
+  %tbody
+    = render(:partial => "shared/adjustment", :collection => adjustments)

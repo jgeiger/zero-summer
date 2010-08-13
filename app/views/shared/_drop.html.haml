@@ -1,0 +1,9 @@
+%tr
+  %td
+    = item_link(drop.item)
+  %td
+    = link_to(drop.encounter.name, boss_url(drop.encounter.boss))
+  - admin_only do
+    %td
+      = link_to(t("label.edit"), edit_drop_url(drop))
+      = link_to(t("label.delete"), drop_url(drop), :confirm => 'Are you sure?', :method => :delete)

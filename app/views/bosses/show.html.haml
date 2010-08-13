@@ -1,0 +1,5 @@
+= page_title(@boss.name)
+%br
+%h2
+  Encounters
+= render(:partial => "shared/encounters", :locals => {:encounters => @boss.encounters})

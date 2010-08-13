@@ -1,0 +1,13 @@
+= page_title(t(".title"))
+- semantic_form_for(@raid) do |f|
+  %h2
+    = t('.create-raid')
+  = f.error_messages
+  = render(:partial => "form", :locals => {:display_cancel => true, :f => f})
+- semantic_form_for(@raid, :url => import_raids_path) do |f|
+  %h2
+    = t('.import-raid')
+  - f.inputs do
+    = f.input :url, :label => t("label.url")
+  - f.buttons do
+    = f.commit_button(t("link.import"))

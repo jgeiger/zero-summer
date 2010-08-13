@@ -1,0 +1,180 @@
+.lightbluebox{display:block}
+.lightbluebox *{
+  display:block;
+  height:1px;
+  overflow:hidden;
+  font-size:.01em;
+  background:#79C2EF}
+.lightbluebox1{
+  margin-left:3px;
+  margin-right:3px;
+  padding-left:1px;
+  padding-right:1px;
+  border-left:1px solid #436279;
+  border-right:1px solid #436279;
+  background:#6198bb}
+.lightbluebox2{
+  margin-left:1px;
+  margin-right:1px;
+  padding-right:1px;
+  padding-left:1px;
+  border-left:1px solid #252b34;
+  border-right:1px solid #252b34;
+  background:#67a2c7}
+.lightbluebox3{
+  margin-left:1px;
+  margin-right:1px;
+  border-left:1px solid #67a2c7;
+  border-right:1px solid #67a2c7;}
+.lightbluebox4{
+  border-left:1px solid #436279;
+  border-right:1px solid #436279}
+.lightbluebox5{
+  border-left:1px solid #6198bb;
+  border-right:1px solid #6198bb}
+.lightblueboxfg{
+  background:#79C2EF}
+.bluebox{display:block}
+.bluebox *{
+  display:block;
+  height:1px;
+  overflow:hidden;
+  font-size:.01em;
+  background:#1C5075}
+.bluebox1{
+  margin-left:3px;
+  margin-right:3px;
+  padding-left:1px;
+  padding-right:1px;
+  border-left:1px solid #1c3144;
+  border-right:1px solid #1c3144;
+  background:#1c425f}
+.bluebox2{
+  margin-left:1px;
+  margin-right:1px;
+  padding-right:1px;
+  padding-left:1px;
+  border-left:1px solid #1c2028;
+  border-right:1px solid #1c2028;
+  background:#1c4564}
+.bluebox3{
+  margin-left:1px;
+  margin-right:1px;
+  border-left:1px solid #1c4564;
+  border-right:1px solid #1c4564;}
+.bluebox4{
+  border-left:1px solid #1c3144;
+  border-right:1px solid #1c3144}
+.bluebox5{
+  border-left:1px solid #1c425f;
+  border-right:1px solid #1c425f}
+.blueboxfg{
+  background:#1C5075}
+.darkbluebox{display:block}
+.darkbluebox *{
+  display:block;
+  height:1px;
+  overflow:hidden;
+  font-size:.01em;
+  background:#011126}
+.darkbluebox1{
+  margin-left:3px;
+  margin-right:3px;
+  padding-left:1px;
+  padding-right:1px;
+  border-left:1px solid #101622;
+  border-right:1px solid #101622;
+  background:#071324}
+.darkbluebox2{
+  margin-left:1px;
+  margin-right:1px;
+  padding-right:1px;
+  padding-left:1px;
+  border-left:1px solid #191a20;
+  border-right:1px solid #191a20;
+  background:#061224}
+.darkbluebox3{
+  margin-left:1px;
+  margin-right:1px;
+  border-left:1px solid #061224;
+  border-right:1px solid #061224;}
+.darkbluebox4{
+  border-left:1px solid #101622;
+  border-right:1px solid #101622}
+.darkbluebox5{
+  border-left:1px solid #071324;
+  border-right:1px solid #071324}
+.darkblueboxfg{
+  background:#011126}
+.whitebox{display:block}
+.whitebox *{
+  display:block;
+  height:1px;
+  overflow:hidden;
+  font-size:.01em;
+  background:#ffffff}
+.whitebox1{
+  margin-left:3px;
+  margin-right:3px;
+  padding-left:1px;
+  padding-right:1px;
+  border-left:1px solid #7d7d7f;
+  border-right:1px solid #7d7d7f;
+  background:#c6c6c7}
+.whitebox2{
+  margin-left:1px;
+  margin-right:1px;
+  padding-right:1px;
+  padding-left:1px;
+  border-left:1px solid #323136;
+  border-right:1px solid #323136;
+  background:#d3d3d4}
+.whitebox3{
+  margin-left:1px;
+  margin-right:1px;
+  border-left:1px solid #d3d3d4;
+  border-right:1px solid #d3d3d4;}
+.whitebox4{
+  border-left:1px solid #7d7d7f;
+  border-right:1px solid #7d7d7f}
+.whitebox5{
+  border-left:1px solid #c6c6c7;
+  border-right:1px solid #c6c6c7}
+.whiteboxfg{
+  background:#ffffff}
+.lightgreybox{display:block}
+.lightgreybox *{
+  display:block;
+  height:1px;
+  overflow:hidden;
+  font-size:.01em;
+  background:#D0D3D9}
+.lightgreybox1{
+  margin-left:3px;
+  margin-right:3px;
+  padding-left:1px;
+  padding-right:1px;
+  border-left:1px solid #696a6f;
+  border-right:1px solid #696a6f;
+  background:#a3a5aa}
+.lightgreybox2{
+  margin-left:1px;
+  margin-right:1px;
+  padding-right:1px;
+  padding-left:1px;
+  border-left:1px solid #2e2d32;
+  border-right:1px solid #2e2d32;
+  background:#adb0b5}
+.lightgreybox3{
+  margin-left:1px;
+  margin-right:1px;
+  border-left:1px solid #adb0b5;
+  border-right:1px solid #adb0b5;}
+.lightgreybox4{
+  border-left:1px solid #696a6f;
+  border-right:1px solid #696a6f}
+.lightgreybox5{
+  border-left:1px solid #a3a5aa;
+  border-right:1px solid #a3a5aa}
+.lightgreyboxfg{
+  background:#D0D3D9}

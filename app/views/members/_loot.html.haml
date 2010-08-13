@@ -1,0 +1,11 @@
+%tr{:class => 'loot-row', :loot_id => "#{loot.id}"}
+  %td
+    = loot.status
+  %td
+    = item_link(loot.drop.item)
+  %td
+    = link_to(loot.raid.name, raid_url(loot.raid))
+  %td
+    = loot.raid.event_date.to_s(:us)
+  %td
+    = loot.drop.encounter.boss.name

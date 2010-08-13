@@ -1,0 +1,8 @@
+- f.inputs do
+  = f.input :name, :label => t("label.name")
+  = f.input :id, :label => t("label.warcraftid")
+  = f.input :quality, :as => :select, :label => t("label.quality"), :collection => Item::QUALITY.map{|k,v| [v, k]}
+- f.buttons do
+  = f.commit_button(t("label.save"))
+  - if display_cancel
+    = f.commit_button(t("label.cancel"), :value => t("label.cancel"))

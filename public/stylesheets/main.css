@@ -1,0 +1,371 @@
+body, html {
+  background-color: #1C1B20;
+}
+
+a {
+  color: #000;
+}
+
+th {
+  text-align: left;
+}
+
+img {
+  border: none;
+}
+
+#doc3 {
+  padding-top: 5px;
+}
+
+.page-title {
+  font-size: 182%;
+  font-weight: bold;
+  color: #2C2F22;
+}
+
+#header {
+  margin: 0px;
+  padding: 5px 5px 5px 10px;
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 20%;
+}
+
+#main {
+  min-height: 500px;
+  margin: 0px;
+  padding: 20px;
+}
+
+#navigation, #user {
+  margin: 0px;
+  padding: 1px 5px 1px 10px;
+}
+
+#hd {
+  position: relative;
+}
+
+#user {
+  position: absolute;
+  text-align: right;
+  top: 5px;
+  right: 10px;
+}
+
+#navigation a {
+  color: #fff;
+}
+
+#footer {
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.form-box, .role-box, .raid-box {
+  border: 1px solid #000;
+  padding: 5px;
+  margin: 5px;
+  float: left;
+}
+
+.raid-box {
+  width: 45%;
+}
+
+.role-box {
+  width: 30%;
+}
+
+.form-box {
+  width: 25em;
+}
+
+.toggle {
+  float: left;
+}
+
+.white {
+  color: #fff;
+}
+
+.darkgrey {
+  color: #1C1B20;
+}
+
+.lightgrey {
+  color: #D0D3D9;
+}
+
+.darkblue {
+  color: #011126;
+}
+
+.blue {
+  color: #1C5075;
+}
+
+.lightblue {
+  color: #79C2EF;
+}
+
+.death-knight, .druid, .hunter, .mage, .paladin, .priest, .rogue, .shaman, .warlock, .warrior, .bank {
+  font-weight: bold;
+  border: 2px solid #000;
+  width: 10em;
+  padding: .2em;
+  display: block;
+  text-align: center;
+}
+
+.death-knight {
+  color: #fff;
+  background: #C41F3B;
+}
+
+.druid {
+  color: #000;
+  background: #FF7D0A;
+}
+
+.hunter {
+  color: #000;
+  background: #ABD473;
+}
+
+.mage {
+  color: #000;
+  background: #69CCF0;
+}
+
+.paladin {
+  color: #000;
+  background: #F58CBA;
+}
+
+.priest {
+  color: #000;
+  background: #ffffff;
+}
+
+.rogue {
+  color: #000;
+  background: #FFF569;
+}
+
+.shaman {
+  color: #fff;
+  background: #2459FF;
+}
+
+.warlock {
+  color: #000;
+  background: #9482C9;
+}
+
+.warrior {
+  color: #000;
+  background: #C79C6E;
+}
+
+.bank {
+  color: #fff;
+  background: #000000;
+}
+
+.row-header {
+  color: #fff;
+  background-color: #000;
+}
+
+/* Pagination */
+.digg_pagination {
+  margin-top: 10px;
+  background: white;
+  /* self-clearing method: */
+}
+.digg_pagination a, .digg_pagination span {
+  padding: .2em .5em;
+  display: block;
+  float: left;
+  margin-right: 1px;
+}
+.digg_pagination span.disabled {
+  color: #999;
+  border: 1px solid #DDD;
+}
+.digg_pagination span.current {
+  font-weight: bold;
+  background: #007a74;
+  color: white;
+  border: 1px solid #007a74;
+}
+.digg_pagination a {
+  text-decoration: none;
+  color: #007a74;
+  border: 1px solid #007a74;
+}
+.digg_pagination a:hover, .digg_pagination a:focus {
+  background-color: #001f7f;
+  color: #003;
+  border-color: #003;
+}
+.digg_pagination .page_info {
+  background: #007a74;
+  color: #fff;
+  padding: .4em .6em;
+  width: 30em;
+  margin-bottom: .3em;
+  text-align: center;
+}
+.digg_pagination .page_info b {
+  color: #007a74;
+  background: #fff;
+  padding: .1em .25em;
+}
+.digg_pagination:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+* html .digg_pagination {
+  height: 1%;
+}
+*:first-child+html .digg_pagination {
+  overflow: hidden;
+}
+
+/* Flash Messages */
+
+.notice, .success, .warning, .validation, .failure, .invalid {
+  border: 1px solid;
+  margin: 10px 0px;
+  padding: 10px 50px 10px 50px;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+}
+.success {
+  color: #4F8A10;
+  background-color: #DFF2BF;
+  background-image: url('/images/icons/success.png');
+}
+.notice {
+  color: #00529B;
+  background-color: #BDE5F8;
+  background-image: url('/images/icons/notice.png');
+}
+.warning, .failure, .invalid {
+  color: #9F6000;
+  background-color: #FEEFB3;
+  background-image: url('/images/icons/warning.png');
+}
+
+.error {
+  background-color: #FFBABA;
+  border: 1px solid #D8000C;
+  color: #000;
+  text-align: left;
+  vertical-align: top;
+  padding-top: 5px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  margin-top: 3px;
+  margin-bottom: 10px;
+}
+
+.error h2 {
+  color: #000;
+}
+
+.error ul {
+  list-style-type: disc;
+  list-style-position: inside;
+  margin: 15px;
+  padding: 3px;
+}
+
+.help {
+  color: #000;
+  background-color: #EEF3DC;
+  border: thin solid #666666;
+  padding: 10px;
+}
+
+.raid-memberships, .raid-memberships li {
+  list-style-type: none;
+  line-height: 2em;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.raid-memberships li {
+  float: left;
+  margin: .1em;
+}
+
+.member {
+  display: block;
+}
+
+.action {
+  float: right;
+  text-align: center;
+  width: 1.2em;
+  margin-right: .1em;
+  border: 1px solid #000;
+  background: #ddf;
+}
+
+.action a {
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+#loading {
+  position: absolute;
+  top: 150px;
+  right: 50px;
+  z-index: 100;
+  display: none;
+  text-align: center;
+}
+
+.qc-artifact, .qc-artifact a, .qc-heirloom, .qc-heirloom a { color: #E6CC80; }
+.qc-legendary, .qc-legendary a { color: #ff8000; }
+.qc-epic, .qc-epic a { color: #a335ee; }
+.qc-rare, .qc-rare a { color: #0070FF; }
+.qc-uncommon, .qc-uncommon a { color: #1EFF00; }
+.qc-common, .qc-common a { color: #000000; }
+.qc-poor, .qc-poor a { color: #9D9D9D; }
+.qc-default, .qc-default a { color: #000000; }
+
+#available-raiders {
+  border: 1px solid #000;
+  padding: 0.2em;
+}
+
+#available-raiders div {
+  margin: 0.1em;
+  float: left;
+}
+
+.inactive {
+	opacity: 0.2;
+  filter:alpha(opacity=20);
+	-moz-opacity:0.2;
+	-khtml-opacity: 0.2;
+}
+
+.rowHeader {
+  background-color: #D3D3D3;
+  font-size: 140%;
+  font-weight: bold;
+}

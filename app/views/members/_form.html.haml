@@ -1,0 +1,9 @@
+- f.inputs do
+  = f.input :name, :label => t("label.name")
+  = f.input :rank, :as => :select, :label => t("label.rank"), :collection => Member::RANKS
+  = f.input :klass, :as => :select, :label => t("label.class"), :collection => Member::KLASSES.values.sort
+  = f.input :role, :as => :select, :label => t("label.role"), :collection => Member::ROLES
+- f.buttons do
+  = f.commit_button(t("label.save"))
+  - if display_cancel
+    = f.commit_button(t("label.cancel"), :value => t("label.cancel"))

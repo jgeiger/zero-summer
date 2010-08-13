@@ -1,0 +1,137 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+en:
+  flash:
+    unauthorized: You are not authorized to complete that action.
+  confirm:
+    areyousure: Are you sure?
+  label:
+    cancel: Cancel
+    save: Save
+    edit: Edit
+    delete: Delete
+    merge: Merge
+    activate: Activate
+    add-raid-member: "Add Raid Member"
+    url: "URL:"
+    member: "Member:"
+    event-date: "Event Date:"
+    name: "Name:"
+    warcraftid: "Warcraft ID:"
+    quality: "Quality:"
+    mandatory: "Mandatory:"
+    boss: "Boss:"
+    type: "Type:"
+    dungeon: "Dungeon:"
+    difficulty: "Difficulty:"
+    drop: "Drop:"
+    item: "Item:"
+    encounter: "Encounter:"
+    class: "Class:"
+    rank: "Rank:"
+    role: "Role:"
+  link:
+    sign-in: Sign In
+    sign-out: Sign Out
+    sign-up: Sign Up
+    dashboard: Dashboard
+    send-password-reset: Send me reset password instructions
+    resend-confirmation: Resend confirmation instructions
+    forgot-password: Forgot password?
+    need-instructions: "Didn't receive confirmation instructions?"
+    change-password: Change my password
+    create-account: Create Account
+    import: Import
+  members:
+    index:
+      title: Members
+      new: New Member
+    raid_attending:
+      title: Raid Attendance
+    new:
+      title: New Member
+    edit:
+      title: Edit Member
+  absences:
+    index:
+      title: Absences
+      new: New Absence
+    new:
+      title: New Absence
+    edit:
+      title: Edit Absence
+  bosses:
+    index:
+      title: Bosses
+      new: New Boss
+    new:
+      title: New Boss
+    edit:
+      title: Edit Boss
+  drops:
+    index:
+      title: Drops
+      new: New Drop
+    new:
+      title: New Drop
+    edit:
+      title: Edit Drop
+  loots:
+    index:
+      title: Loots
+      new: New Loot
+    new:
+      title: New Loot
+    edit:
+      title: Edit Loot
+  items:
+    index:
+      title: Items
+      new: New Item
+    new:
+      title: New Item
+    edit:
+      title: Edit Item
+  dungeons:
+    index:
+      title: Dungeons
+      new: New Dungeon
+    new:
+      title: New Dungeon
+    edit:
+      title: Edit Dungeon
+  encounters:
+    index:
+      title: Encounters
+      new: New Encounter
+    new:
+      title: New Encounter
+    edit:
+      title: Edit Encounter
+  raids:
+    index:
+      title: Raids
+      new: New Raid
+    new:
+      title: New Raid
+      create-raid: Create Raid
+      import-raid: Import Raid
+    edit:
+      title: Edit Raid
+  users:
+    new:
+      title: Create Account
+    show:
+      title: User Dashboard
+  confirmations:
+    new:
+      title: Resend Confirmation
+  sessions:
+    new:
+      title: Sign In
+  passwords:
+    new:
+      title: Forgot Password?
+    edit:
+      title: Reset Password

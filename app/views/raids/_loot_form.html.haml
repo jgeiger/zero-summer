@@ -1,0 +1,5 @@
+- semantic_form_for(@loot, :html => { :id => "loot-form" }) do |f|
+  %h2
+    Create loot
+  = f.error_messages
+  = render(:partial => "loots/form.html.haml", :locals => {:display_cancel => false, :f => f})

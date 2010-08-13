@@ -1,0 +1,4 @@
+%h2
+  Available Raiders
+= render(:partial => "raids/raider.html.haml", :collection => available_raiders, :locals => {:raid_id => raid.id})
+%br{:clear => "both"}

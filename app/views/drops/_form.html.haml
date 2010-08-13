@@ -1,0 +1,7 @@
+- f.inputs do
+  = f.input :encounter_id, :as => :select, :label => t("label.encounter"), :collection => @encounters, :selected => @drop.encounter_id.to_s
+  = f.input :item_id, :as => :select, :label => t("label.item"), :collection => @items, :selected => @drop.item_id.to_s
+- f.buttons do
+  = f.commit_button(t("label.save"))
+  - if display_cancel
+    = f.commit_button(t("label.cancel"), :value => t("label.cancel"))

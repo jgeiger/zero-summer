@@ -1,0 +1,4 @@
+= page_title("Edit Loot for #{@raid.name} - #{@raid.event_date.to_s(:us)}")
+- semantic_form_for(@loot, :html => { :id => "loot-form" }) do |f|
+  = f.error_messages
+  = render(:partial => "form", :locals => {:display_cancel => true, :f => f})

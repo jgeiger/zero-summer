@@ -1,0 +1,25 @@
+= render(:partial => "shared/pagination.html.haml", :locals => {:items => loots}) if !skip_paginate
+%br
+%table#loot-table{:width => "100%"}
+  %thead
+    %tr.rowHeader
+      %th
+        Status
+      %th
+        Member
+        = sort_links(Loot, "members.name")
+      %th
+        Item
+        = sort_links(Loot, "items.name")
+      %th
+        Raid
+      %th
+        Looted
+        = sort_links(Loot, "raids.event_date")
+      %th
+        Boss
+      - admin_only do
+        %th{:width => "10%"}
+          Action
+  %tbody
+    = render(:partial => 'loots/loot.html.haml', :collection => loots)

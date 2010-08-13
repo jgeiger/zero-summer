@@ -1,0 +1,5 @@
+= page_title(@item.name)
+%br{:clear => :all}
+%h2
+  Loots
+= render(:partial => "loots/loots", :locals => {:loots => @item.loots, :skip_paginate => true})

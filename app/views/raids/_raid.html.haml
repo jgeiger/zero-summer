@@ -1,0 +1,10 @@
+%tr
+  %td
+    = link_to(raid.name, raid_url(raid))
+  %td
+    = raid.event_date.to_s(:us)
+  - admin_only do
+    %td
+      = link_to(t("label.edit"), edit_raid_url(raid))
+      = link_to(t("label.activate"), activate_raid_url(raid), :class => 'confirm') if !raid.active?
+      = link_to(t("label.delete"), raid_url(raid), :confirm => "Are you sure?", :method => :delete) if raid.loots.empty?

@@ -1,0 +1,32 @@
+= page_title(@raid.name)
+%p
+  = @raid.event_date.to_s(:us)
+.raid-box
+  %h2
+    == Raid Members
+  - if admin?
+    #raider-forms
+      - if @available_raiders.size > 0
+        = render(:partial => "raider_form")
+    %br{:clear => 'both'}
+  %p
+    Active:
+    %span.active-memberships
+      #{@active_memberships}
+    %br
+    Total:
+    %span.total-memberships
+      #{@total_memberships}
+  #raid-members
+    = render(:partial => "raiders", :locals => {:raiders => @raiders})
+  %br{:clear => :all}
+.raid-box
+  %h2 Loots
+  - if admin?
+    #loots
+      = render(:partial => "loot_form")
+    %br{:clear => 'both'}
+  #loot-list
+    = render(:partial => "loots.html.haml", :locals => {:loots => @raid.loots})
+  %br{:clear => :all}
+%br{:clear => :all}

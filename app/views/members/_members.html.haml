@@ -1,0 +1,24 @@
+= render(:partial => "shared/pagination.html.haml", :locals => {:items => members})
+%br
+%table#member-table{:width => "100%"}
+  %thead
+    %tr.rowHeader
+      %th
+        Name
+        = sort_links(Member, "members.name")
+      %th
+        Class
+        = sort_links(Member, "members.klass")
+      %th
+        Rank
+        = sort_links(Member, "members.rank")
+      %th
+        Role
+        = sort_links(Member, "members.role")
+      - if admin?
+        %th{:width => "10%"}
+          Action
+  %tbody
+    = render(:partial => "member.html.haml", :collection => members)
+- if admin?
+  %script{:language=>"javascript",:src=>"/javascripts/editing.js"}=""

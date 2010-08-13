@@ -1,0 +1,12 @@
+%tr
+  %td{:valign => 'top'}
+    = item_link(item)
+  %td{:valign => 'top'}
+    - if item.drops.any?
+      = item.bosses.join(", ")
+    - else
+      No Drop set yet.
+  - admin_only do
+    %td{:valign => 'top'}
+      = link_to(t("label.edit"), edit_item_url(item))
+      = link_to(t("label.delete"), item_url(item), :confirm => 'Are you sure?', :method => :delete)

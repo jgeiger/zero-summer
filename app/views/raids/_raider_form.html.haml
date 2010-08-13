@@ -1,0 +1,11 @@
+%span{:class => 'toggle', :toggle_id => '#create-member'}
+  Create member
+#create-member{:style => 'display: none;'}
+  - semantic_form_for(@member, :html => {:id => 'remote-raider'}) do |f|
+    %h2
+      Create member
+    = f.input :raid_id, :as => :hidden, :value => @raid.id
+    = render(:partial => "members/form", :locals => {:display_cancel => false, :f => f})
+%br{:clear => "both"}
+#available-raiders
+  = render(:partial => "raids/available_raiders", :locals => {:raid => @raid, :available_raiders => @available_raiders})

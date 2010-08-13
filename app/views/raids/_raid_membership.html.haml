@@ -1,0 +1,3 @@
+%li
+  %div{:class => "member #{raid_membership.member.css_class} #{raid_membership.active_css} #{toggle_membership(raid_membership)}", :raid_membership_id => raid_membership.id}
+    = raid_membership.member.name

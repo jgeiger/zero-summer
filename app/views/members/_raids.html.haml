@@ -1,0 +1,9 @@
+%table#raid-table{:width => "100%"}
+  %thead
+    %tr.rowHeader
+      %th
+        Name
+      %th
+        Event Date
+  %tbody
+    = render(:partial => 'raids/raid.html.haml', :collection => raids)

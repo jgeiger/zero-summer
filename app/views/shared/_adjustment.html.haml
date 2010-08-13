@@ -1,0 +1,11 @@
+%tr
+  %td
+    = link_to(adjustment.loot.raid.name, raid_url(adjustment.loot.raid))
+  %td
+    = adjustment.loot.raid.event_date.to_s(:us)
+  %td
+    = item_link(adjustment.loot.item)
+  %td
+    = link_to(adjustment.loot.member.name, member_url(adjustment.loot.member), :class => "#{adjustment.loot.member.css_class}")
+  %td
+    = adjustment.amount
